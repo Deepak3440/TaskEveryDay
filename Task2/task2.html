@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border-radius: 5%; 
+           background-color: aquamarine;
+             padding: 20px;  
+          text-align: center;
+     }
+        input[type=text],[type=email],[type=password] ,select {
+            width: 30%;
+           padding: 12px 20px;
+           margin: 8px 0;
+           display: inline-block; 
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+}
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Form with Validation</h1>
+        <form action="./next.html" method="get" onsubmit="validate(event)">
+            <label for="fname">First name:</label><br>
+        <input  type="text" onchange="isSubmittable(event)" id="fname" name="fname" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" onchange="isSubmittable(event)" name="lname" required><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="pass" name="pass" required><br>
+        <label for="selc">Select:</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" required>
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" required>
+        <label for="vehicle3"> I have a boat</label><br>
+        <label for="mess">Message</label><br>
+        <textarea id="mess" name="mess" rows="10" cols="20" required></textarea><br>
+        <label for="country">Country</label><br>
+        <select id="country" name="country" required>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <input type="submit" disabled value="Submit">
+    
+      </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

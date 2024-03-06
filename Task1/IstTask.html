@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: aliceblue;
+        }
+         .button {
+            background-color: #e7e7e7; 
+            color: black;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        /* .nav {
+            height: 10px;
+            width: 10px;
+        }
+       
+        p{
+            margin-top: 200px;
+        }
+        
+
+        header{
+            margin-top: 150px;
+        } */
+        img{ 
+            width: 70%;
+            border-radius: 5px;
+                    
+        } 
+        .image{
+            display: grid;
+             place-items: center;
+        }
+        .left {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 80px;
+        }
+        h1,p{
+            text-align: center;
+        }
+        /* .text1{
+            background-color: antiquewhite;
+        } */
+    </style>
+    
+</head>
+<body>
+    <div style="display: flex; flex-direction: column;">
+        <div>
+            <h1>About</h1>
+            <p class="text1">There are many variations of passages of Lorem Ipsum available</p>
+        </div>
+        
+        <div class="left">
+            <div  class="image">
+                <img src="soft-skills.jpg" alt="">
+            </div>
+            <div>
+               
+                    <button class="button" onclick="fun1('button')">Button</button>
+                    <button class="button" onclick="fun1('button1')">Button1</button>
+                    <button class="button" onclick="fun1('button2')">Button2</button>
+                    <p id="con">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration<br> in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there <br>isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators</p>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        function fun1(buttonId) {
+            var content = "";
+            if (buttonId === 'button') {
+                content = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators";
+            }
+            else if (buttonId === 'button1')
+            {
+                content = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).";
+            } 
+            else if (buttonId === 'button2') {
+                content = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33  (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, , comes from a line in section 1.10.32";
+            }
+            document.getElementById('con').innerText = content;
+        }
+    </script>
+</body>
+</html>
+
+
+
