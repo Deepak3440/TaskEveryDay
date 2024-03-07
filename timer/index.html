@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            display: grid;
+            place-items: center;
+            margin: 0;
+            padding-top: 100px;
+            background-color: antiquewhite;
+            min-height: 50vh;
+
+
+        } 
+
+        h1{
+            text-align: center;
+            
+
+        }
+
+        .timerDisplay{
+            display: flex;
+            background-color: black;
+            color: white;
+            width: 200px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+    .button {
+      background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button1,.button2 {
+      background-color:red; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 50px; 
+    
+}
+.button2{
+    background-color:aqua;
+}
+.di {
+    display: flex;
+    flex-direction: row;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Timer</h1>
+    <div class="stopWatch">
+        <div class="timerDisplay">00:00:00:00</div>
+    </div>
+    
+    <div class="di">
+    <button  class="button" id="sbtn">Stop</button>
+    <button  class="button1" id="stbtn">Start</button>
+    <button class="button2"  id="Rbtn">Reset</button>
+</div>
+    <script src="./index.js"></script>
+
+</body>
+</html>
