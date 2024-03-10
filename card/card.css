@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#main-card{
+    width: 400px;
+    position: relative;
+    
+    background-color: #fff;
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+    text-align: center;
+     margin: 0px auto ; 
+     margin-top: 20px;
+
+    >img{
+        border-radius: 50%;
+        margin:  0 auto;
+        max-width: 160px;
+        /* display: block; */
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+    }
+    h3,h4{
+        text-align: center;
+        margin: 12px 0;
+    
+    }
+    p{
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto 16px;
+    }
+    .btn{
+        display: block;
+        margin: 0 auto 12px;
+        background-color: blue;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        
+    }
+}
+.di{
+    border: 1px solid red;
+    width: 410px;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto ;
+    height: 10px;
+    background-color: red;
+    border-radius: 20%;
+
+}
+.icon{
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 365px;
+}
