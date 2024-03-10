@@ -62,3 +62,9 @@
     top: 5px;
     right: 365px;
 }
+
+.social-icons{
+    width: 100x;
+    display: flex;
+justify-content:space-evenly;
+}
