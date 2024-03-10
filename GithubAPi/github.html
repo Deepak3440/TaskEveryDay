@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body 
+        {
+            margin: 0;
+            box-sizing: border-box;
+            padding: auto;
+        }
+
+        #main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 50%; 
+            margin: 30px auto; 
+            flex-direction: column;
+        }
+
+        #main label {
+            display: flex;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        #main input {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        #main button {
+            padding: 8px 15px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #main button:hover {
+            background-color: #45a049;
+        }
+
+        #main-cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card-main {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            background-color: black;
+            margin-bottom: 10px;
+
+        }
+
+        .card-main img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .card-info {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 10px;
+            align-items: center;
+            color: white;
+        }
+
+        .card-bio {
+            margin-top: 10px;
+            color: white;
+            /* max-height: 60px; */
+            max-width: 300px;
+            overflow: hidden;
+        }
+
+        .card-repo,
+        .card-follower,
+        .card-following {
+            background-color: rgb(44, 43, 43);
+            color: #fff;
+            border-radius: 3px;
+            padding: 8px;
+        }
+
+        .card-updated
+         {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: white;
+            z-index: 100;
+            width: 30%; 
+            background-color: #3498db;
+        }
+
+
+        .card-created 
+        {
+        color: white;
+        margin-top: 10px;
+        z-index: 100;
+        width: 30%; 
+        background-color: #3498db;
+}
+
+        h2 {
+            color: white;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            background-color: aliceblue;
+        }
+        .profile {
+            display: block;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 5px;
+            margin: 12px auto;
+            
+        }
+
+ 
+
+    </style>
+</head>
+<body>
+    <h1>Search Github Profile</h1>
+    <div id="main">
+        <label>Enter Github UserName:</label>
+        <input id="text-name" type="text" value="" required>
+        <button id="btn" type="button">Submit</button>
+    </div>
+    <div id="main-cards"></div>
+
+    <script src="./githubApi.js"></script>
+</body>
+</html>
