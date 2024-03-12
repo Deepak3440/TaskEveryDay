@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #main{
+             width: 50%; 
+            margin: 70px auto;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+            >h1{
+                margin: 14px auto;
+
+            }
+            label{
+                display: block;
+                margin: 15px auto;
+                font-size: 30px;
+            }
+            input[type='text']{
+                width: 50%;
+                margin: 8px auto;
+                padding: 10px;
+
+            }
+            .btn{
+              
+                background-color: black; 
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                font-size: 16px;
+                border: 2px solid #04AA6D;
+                margin:12px auto;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div id="main">
+        <form id="valid" onsubmit= "validform()" >
+        <h1>Form</h1>
+        <label>Enter input user:</label>
+        <input type="text" id="text-value" name="" placeholder="Enter Name">
+        <button class="btn">Submit</button>
+    </form>
+    </div>
+
+    <script src="./form.js"></script>
+</body>
+</html>
